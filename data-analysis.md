@@ -43,6 +43,8 @@ The exploratory phase will generate lots of possible hypotheses, and the exploit
   - Remove rows with missing values - This works well if 1) the values are missing randomly (see [Vinay Prabhu's answer](https://www.quora.com/How-can-I-deal-with-missing-values-in-a-predictive-model/answer/Vinay-Prabhu-7) for more details on this) 2) if you don't lose too much of the dataset after doing so.
   - Build another predictive model to predict the missing values - This could be a whole project in itself, so simple techniques are usually used here.
   - Use a model that can incorporate missing data \- Like a random forest, or any tree-based method.
+  - Use mean/median to replace the missing value
+  - Set some specail value to reprent, such as 1.
 #### 10. You have several variables that are positively correlated with your response, and you think combining all of the variables could give you a good prediction of your response. However, you see that in the multiple linear regression, one of the weights on the predictors is negative. What could be the issue?
   - Multicollinearity refers to a situation in which two or more explanatory variables in a [multiple regression](https://en.wikipedia.org/wiki/Multiple_regression "Multiple regression") model are highly linearly related. 
   - Leave the model as is, despite multicollinearity. The presence of multicollinearity doesn't affect the efficiency of extrapolating the fitted model to new data provided that the predictor variables follow the same pattern of multicollinearity in the new data as in the data on which the regression model is based.
