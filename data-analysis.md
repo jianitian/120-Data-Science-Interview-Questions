@@ -51,6 +51,8 @@ The exploratory phase will generate lots of possible hypotheses, and the exploit
   - principal component regression
 #### 11. Let’s say you’re given an unfeasible amount of predictors in a predictive modeling task. What are some ways to make the prediction more feasible?
   - PCA
+  - Lasso to penalize the predictors.
+  - Forward or backward variable selection.
 #### 12. Now you have a feasible amount of predictors, but you’re fairly sure that you don’t need all of them. How would you perform feature selection on the dataset?
   - ridge / lasso / elastic net regression
   - Univariate Feature Selection where a statistical test is applied to each feature individually. You retain only the best features according to the test outcome scores
@@ -76,7 +78,7 @@ The exploratory phase will generate lots of possible hypotheses, and the exploit
 For example, if you're doing binary classification, you can use all the probability outputs of your individual models as inputs to a final logistic regression (or any model, really) that can combine the probability estimates.  
 
 One very important point is to make sure that the output of your models are out-of-sample predictions. This means that the predicted value for any row in your dataframe should NOT depend on the actual value for that row.
-#### 16. Given that you have wi  data in your o ce, how would you determine which rooms and areas are underutilized and overutilized?
+#### 16. Given that you have wifi  data in your office, how would you determine which rooms and areas are underutilized and overutilized?
   - If the data is more used in one room, then that one is over utilized! Maybe account for the room capacity and normalize the data.
 #### 17. How could you use GPS data from a car to determine the quality of a driver?
 #### 18. Given accelerometer, altitude, and fuel usage data from a car, how would you determine the optimum acceleration pattern to drive over hills?
