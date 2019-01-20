@@ -6,6 +6,7 @@
   - the more predictors you add the higher R^2 becomes.
     - hence use adjusted R^2 which adjusts for the degrees of freedom 
     - or train error metrics
+    - AIC/BIC
 #### 3. What is the curse of dimensionality?
   - High dimensionality makes clustering hard, because having lots of dimensions means that everything is "far away" from each other.
   - For example, to cover a fraction of the volume of the data we need to capture a very wide range for each variable as the number of variables increases
